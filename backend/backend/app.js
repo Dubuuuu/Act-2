@@ -1,7 +1,12 @@
 const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
-const ToDoRoutes = require('./routes/todo.js')
+const ToDoRoutes = require('./routes/todo.js.js')
+
+let app = express()
+
+// Route Imports
+const UserRoutes = require('./routes/users')
 
 let app = express()
 
@@ -11,10 +16,8 @@ app.use(express.json())
 app.use(morgan('dev'))
 
 // Routes
-app.use("/todo", ToDoRoutes);
-app.use("/user", (req, res) => {
-    res.send("app 2 users to");
-})
+app.use("/user", UserRoutes)
+
 
 //Export App
 module.exports = app

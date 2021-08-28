@@ -1,6 +1,6 @@
 import React from 'react'
 import UserForm from './UserForm'
-import {createUser} from './api'
+import { createUser } from './api'
 
 
 const CreateUser = () => {
@@ -9,14 +9,14 @@ const CreateUser = () => {
     }
 
 
-return (
-    <div className='container'>
-        <div>
-            <h3>Create User</h3>
-            <UserForm onSubmit={onSubmit} />
+    return (
+        <div className='container'>
+            <div>
+                <h3>Create User</h3>
+                <UserForm onSubmit={onSubmit} />
+            </div>
         </div>
-    </div>
-)
+    )
 }
 
 export default CreateUser

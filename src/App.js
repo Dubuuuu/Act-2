@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Switch, Link } from 'react-router-dom'
-import UsersList from './UserList'
+import UsersList from './UsersList'
 import CreateUser from './CreateUser'
 import EditUser from './EditUser'
 
